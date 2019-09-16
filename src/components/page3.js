@@ -3,7 +3,7 @@ import logo from '../logo.svg';
 
 const Page3=({onRouteChange})=>{
     return(
-    <div classname="App">
+    <div className="App">
     <header className="App-header">
     <img src={logo} className="App-logo" alt="logo"/>
     <h1 className="App-title">Welcome to Page 3</h1>
