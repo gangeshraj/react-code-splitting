@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
-import './App.css';
-import Page1 from './components/page1';
+import Page1 from './components/page1/page1';
 // Now its not needed as import on top
 // import Page2 from './components/page2';
 // import Page3 from './components/page3';
@@ -20,12 +19,12 @@ class App extends Component {
       route:route
     });
     else if(route==='page2'){
-        import('./components/page2').then((Page2)=>{
+        import('./components/page2/page2').then((Page2)=>{
           this.setState({route:route,component:Page2.default})
         })
     }
     else{
-      import('./components/page3').then((Page3)=>{
+      import('./components/page3/page3').then((Page3)=>{
         this.setState({route:route,component:Page3.default})
       })
     }
