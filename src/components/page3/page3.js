@@ -8,7 +8,7 @@ const Page3=({onRouteChange})=>{
     <div className="App">
     <header className="App-header">
     <img src={logo} className="App-logo" alt="logo"/>
-    <h1 className="App-title">Welcome to Page 3</h1>
+    <h1 className="App-title">PAGE 3</h1>
     </header>
     <div className={"bw"}>
     <button onClick={()=>onRouteChange('page1')}>Page 1</button>

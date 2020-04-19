@@ -3,6 +3,7 @@ import Page1 from './components/page1/page1';
 // Now its not needed as import on top
 // import Page2 from './components/page2';
 // import Page3 from './components/page3';
+import ThemeProviderComponent from './theme/themedecider';
 
 class App extends Component {
 
@@ -32,9 +33,9 @@ class App extends Component {
 
   render(){
       if(this.state.route==='page1')
-      return <Page1 onRouteChange={this.onRouteChange}/>
+      return <ThemeProviderComponent><Page1 onRouteChange={this.onRouteChange}/></ThemeProviderComponent>
       else
-      return <this.state.component onRouteChange={this.onRouteChange}/>
+      return <ThemeProviderComponent><this.state.component onRouteChange={this.onRouteChange}/></ThemeProviderComponent>
     }
 }
 

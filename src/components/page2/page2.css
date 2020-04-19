@@ -1,4 +1,4 @@
-.page1-App {
+.App {
     text-align: center;
   }
   .page1-bw{
@@ -16,7 +16,7 @@
     float: center;
   }
   
-  .page1-disabled{
+  .disabled{
     border: 4px solid grey;
     cursor: not-allowed;
     pointer-events: none;
