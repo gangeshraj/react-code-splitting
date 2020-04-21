@@ -1,39 +1,35 @@
 import React from 'react';
 import styled,{ ThemeProvider } from 'styled-components';
-
-const Button = styled.button`
-  background: 'red',
-  borderRadius: 3,
-  border: 'none',
-  color: 'white',
-  color: ${props => props.theme.main.color};
-  border: 2px solid red;
-`;
-
-const H1=styled.h1`
-    background: 'green',
-    border: 'none',
-    color: 'white',
-    color: ${props => props.theme.main.color};
-    border: 2px solid red;
-    fontSize:100
-`;
-
 const theme={
   buttonTheme:{
     background: 'red',
     borderRadius: 3,
     border: 'none',
-    color: 'white'
+    color: 'white',
+    'height':50,
+    'width':200
   },
   themeh1:{
     backgroundColor:'blue',
     color:'skyblue',
     borderRadius:4
   },
-  'Button':Button
+  h1:{
+    background: 'green',
+    border: 'none',
+    color: 'white',
+    color: 'red',
+    border: '2px solid red',
+    fontSize:100
+  },
+  Button:{
+    backgroundColor: 'red',
+    borderRadius: 3,
+    color: 'green',
+    height:50,
+    width:200
+  }  
 };
-
 
 const ThemeProviderDesktop =(props)=>{
 
